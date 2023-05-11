@@ -6,26 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tic-tac-toe</title>
     <link rel="stylesheet" href="ttt.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Caveat:wght@500&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <div class="container">
-        <h1 id="playertxt">Tic Tac Toe</h1>
-        <button id="restartbtn">Restart</button>
+    <nav>
+        <ul>
+            <li>tictactoe.co</li>
+        </ul>
+    </nav>
+    <div class="gamecontainer">
+        
 
-        <div id="gameboard">
-            <div class="box" id="0"></div>
-            <div class="box" id="1"></div>
-            <div class="box" id="2"></div>
-            <div class="box" id="3"></div>
-            <div class="box" id="4"></div>
-            <div class="box" id="5"></div>
-            <div class="box" id="6"></div>
-            <div class="box" id="7"></div>
-            <div class="box" id="8"></div>
+        <div class="container">
+            <div class="box bt-0 bl-0" id="0"><span class="boxtext"></span></div>
+            <div class="box bt-0" id="1"><span class="boxtext"></span></div>
+            <div class="box bt-0 br-0" id="2"><span class="boxtext"></span></div>
+            <div class="box bl-0" id="3"><span class="boxtext"></span></div>
+            <div class="box" id="4"><span class="boxtext"></span></div>
+            <div class="box br-0" id="5"><span class="boxtext"></span></div>
+            <div class="box bb-0 bl-0" id="6"><span class="boxtext"></span></div>
+            <div class="box bb-0" id="7"><span class="boxtext"></span></div>
+            <div class="box bb-0 br-0" id="8"><span class="boxtext"></span></div>
             
+        </div>
+        <div class="gameinfo">
+            <h1>Welcome to the tic tac toe game</h1>
+            <div>
+                <span class="info">Turn for "X"</span>
+                <button class="reset">Reset</button>
+            </div>
+            <div class="imgbox">
+                <img src="pinterestdownloader.com-1683830940.530356.gif" alt="" srcset="">
+            </div>
         </div>
     </div>
     <script src="ttt.js"></script>
