@@ -26,10 +26,12 @@ nav ul{
 }
 .container{
     display: grid;
-    grid-template-columns: repeat(3, 10vw);
     grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
     font-family: 'Roboto', sans-serif;
     position: relative;
+    font-family: 'Roboto', sans-serif;
+    
 }
 .box{
     border: 1.5px solid yellow;
@@ -41,6 +43,9 @@ nav ul{
 }
 .box:hover{
    background-color: rgb(168, 22, 168);
+}
+.info {
+    font-size: 22px;
 }
 .gameinfo{
     padding: 0 34px;
