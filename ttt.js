@@ -17,14 +17,17 @@ const checkWin = () => {
 // Game logic
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach((Element)=>{
-    let boxtext = document.querySelector(".boxtext")
+    let boxtext = Element.querySelector(".boxtext")
     Element.addEventListener("click",()=>{
         if (boxtext.innerText === ""){
-            boxtext.innerText === turn;
-            changeTurn();
+            boxtext.innerText = turn;
+            turn = changeTurn();
+            // changeTurn();
             audioturn.play();
             checkWin();
-            document.getElementsByClassName("info")[0].innerText = "Turn for" + turn;
+            if (!isgameover){
+                document.getElementsByClassName("info")[0].innerText = "Turn for" + turn;
+            }
         }
 
     })
