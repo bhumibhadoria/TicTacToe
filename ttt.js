@@ -1,12 +1,13 @@
 console.log("Welcome to tic tac toe")
-let music = new Audio("music.mp3")
+// let music = new Audio("music.mp3")
 let audioturn = new Audio("turn.wav")
 let gameover = new Audio("gameover.wav")
 let turn = "X"
+let isgameover = false;
 
 // function to change the turn
 const changeTurn = () => {
-    return turn === "X"?"0" : "X"
+    return turn === "X"? "0" : "X"
 }
  
 // function to check for a Win
@@ -32,3 +33,5 @@ Array.from(boxes).forEach((Element)=>{
 
     })
 })
+
+
